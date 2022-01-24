@@ -1,0 +1,105 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background: rgb(190, 190, 238);
+}
+h1{
+    font-weight: bold;
+    color:rgb(46, 18, 170);
+}
+#top ul{
+    list-style-type: none;
+}
+#top a{
+    text-decoration: none;
+}
+body h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(1, 83, 83);
+    text-align:center;
+    font-size: 16px;
+    display:block;
+}
+.bottom a{
+    text-decoration: none;
+}
+.bottom{
+    clear:both;
+    text-align: center;
+}
+@media(orientation:landscape){
+    h1{
+        text-align: left;
+    }
+    body h2:hover{
+        color:rgb(255, 17, 0);
+        cursor: pointer;
+    }
+    #top> div{
+        display:inline-block;
+        background-color:rgb(12, 177, 12);
+        width:150px;
+        border:2px solid black;
+        text-align:center;
+    }
+    #top a:link{
+        color:brown;
+    }
+    #top a:visited{
+        color:black;
+    }
+    #top a:hover{
+        text-decoration: underline;
+    }
+    #section1{
+        color:rgb(25, 31, 12);
+        width:50%;
+        float:left;
+        padding:5px;
+    }
+    #section2{
+        color:rgb(25, 31, 12);
+        width:50%;
+        float:right;
+        padding:5px;
+    }
+    .bottom a:link{
+        color:rgb(38, 129, 204);
+        background-color:whitesmoke;
+    }
+    .bottom a:visited{
+        color:blue;
+    }
+    .bottom a:hover{
+        text-decoration: underline;
+    }
+}
+@media(orientation:portrait){
+    h1{
+        text-align: center;
+    }
+    #top div{
+        text-align: center;
+        background-color: whitesmoke;
+        border:2px solid black;
+        margin-bottom: 20px;
+    }
+    #top a:link{
+        color:brown;
+    }
+    #top a:visited{
+        color:black;
+    }
+    .bottom{
+        text-align: center;
+    }
+    .bottom a:link{
+        color:brown;
+        background-color:whitesmoke;
+    }
+    .bottom a:visited{
+        color:tomato;
+        background-color: black;
+    }
+}
